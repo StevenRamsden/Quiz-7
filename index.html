@@ -35,10 +35,7 @@
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://osm.org/copyright">\
-        OpenStreetMap</a> contributors, &copy;\
-        <a href="https://carto.com/attribution">CARTO</a>'
+    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
